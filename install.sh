@@ -26,3 +26,6 @@ for filename in $dir* $dir.*; do
  #        echo ~/.config/$dotfile
    fi
 done
+
+# Now install the plugins with Vundle
+vim +PluginInstall +qall
