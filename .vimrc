@@ -1,3 +1,19 @@
+" Stuff for Vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'bling/vim-airline'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+call vundle#end()
+filetype plugin indent on
+
 set smartindent
 set tabstop=3
 set shiftwidth=3
@@ -7,7 +23,6 @@ set number
 set laststatus=2
 set backspace=indent,eol,start
 
-filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
 let g:EclimCompletionMethod = 'omnifunc'
@@ -26,5 +41,3 @@ let g:airline#extensions#tabline#enabled = 1
 " Close omni-completion tip after selection is made
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-execute pathogen#infect()
