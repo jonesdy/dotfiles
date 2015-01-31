@@ -1,0 +1,8 @@
+Terminal = urxvt
+TermExec = ${Terminal} -e
+AlwaysInTerm = ssh telnet ftp vim
+ShowLast = 1
+ShowDotFiles = 1
+#TabTimeout = 0
+URL_http = chromium %u
+URL_man = ${TermExec} 'man %s'
