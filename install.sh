@@ -9,7 +9,7 @@ for filename in $dir* $dir.*; do
    dotfile=${filename#$dir}
    if [ $filename != $script -a $dotfile != "." -a $dotfile != ".." -a $dotfile != ".git" -a $dotfile != ".config" ]
       then
-         ln -sf $filename ~/$dotfile
+         ln -sf $filename ~/
 #         echo $filename
 #         echo ~/$dotfile
    fi
@@ -21,7 +21,7 @@ for filename in $dir* $dir.*; do
    dotfile=${filename#$dir}
    if [ $filename != $script -a $dotfile != "." -a $dotfile != ".." -a $dotfile != ".git" -a $dotfile != ".config" ]
       then
-         ln -sf $filename ~/.config/$dotfile
+         ln -sf $filename ~/.config/
 #         echo $filename
  #        echo ~/.config/$dotfile
    fi
