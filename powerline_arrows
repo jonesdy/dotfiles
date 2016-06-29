@@ -1,0 +1,3 @@
+Set locale to a UTF8 valid locale:
+1. Open /etc/locale.conf
+2. Set LANG to en_US.UTF-8
