@@ -1,0 +1,9 @@
+No mounting necessary, just directly to the device
+1. sudo virsh edit <VM name>
+2. Add the following under <devices> (note, should probably use a UUID instead of device name in case it changes)
+
+<disk type='block' device='disk'>
+  <driver name='qemu' type='raw'/>
+  <source dev='/dev/sdd1'/>
+  <target dev='sdb' bus='sata'/>
+</disk>
